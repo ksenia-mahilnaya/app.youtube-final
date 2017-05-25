@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your awesome Youtube search engine</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Awesome videos!" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<!-- scripts -->
+<script>
+    function init() {
+        gapi.client.setApiKey("AIzaSyCWQL3TeoDJ0VFsJcg35Dl6mrI787diILU");
+        gapi.client.load("youtube", "v3", function() {
+            gapi.client.load('youtubeAnalytics', 'v1', function() {
+            });
+        });
+    }
+</script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+<script src="dist/bundle.js"></script>
+
+</body>
+</html>

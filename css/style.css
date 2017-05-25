@@ -1,0 +1,243 @@
+* {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0 none;
+    outline: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #4f4f4f;
+}
+
+.video-item {
+    height: 400px;
+    width: 280px;
+    background: #68b195;
+    float: left;
+    margin: 20px 20px 0;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.video-item:hover {
+    -webkit-box-shadow: 1px 1px 28px 8px rgba(56,56,56,1);
+    -moz-box-shadow: 1px 1px 28px 8px rgba(56,56,56,1);
+    box-shadow: 1px 1px 28px 8px rgba(56,56,56,1);
+}
+
+.video-item img {
+    margin-top: 30px;
+}
+
+.video-item p {
+    padding: 5px 20px;
+}
+
+.title {
+    background: rgba(80, 106, 133, 0.8);
+    height: 78px;
+    text-align: center;
+    position: relative;
+    bottom: 116px;
+    margin-bottom: -80px;
+
+}
+
+.title a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.title a:hover {
+    color: #68ce98;
+    font-weight: 300;
+}
+
+.author {
+    font-size: 16px;
+}
+
+.author::before {
+    content: "\f2bd";
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.date::before {
+    content: "\f073";
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.view-count::before {
+    content: "\f06e";
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.touchgallery{
+    position: relative;
+    overflow: hidden;
+    max-width: 1281px;
+    height: 450px; /* default gallery height */
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+.touchgallery ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    position: absolute;
+    height: 450px;
+    -moz-transition: all 100ms ease-in-out; /* image transition. Change 100ms to desired transition duration */
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.touchgallery ul li {
+    width: 1281px;
+    height: 450px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.input-border {
+    width: 600px;
+    height: 35px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 36px auto;
+}
+
+input[type="text"] {
+    width: 509px;
+    height: 34px;
+    border-radius: 5px;
+    background: transparent;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    padding: 2px 11px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f1f1f1;
+    background: #6f8aa6;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #506a85;
+    color: #fff;
+}
+
+#pagination-div{
+    list-style: none;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin: 0 auto 12px;
+}
+#pagination-div span{
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    color: #333;
+    font-weight: 800;
+    margin: 0 2px;
+}
+
+.pagin-container {
+    display: inline-block;
+}
+
+.container {
+    text-align: center;
+}
+
+.active {
+    display: inline-block;
+}
+
+.disable {
+    display: none;
+}
+
+.button-next::after {
+    content: "\f061";
+    font-family: FontAwesome;
+}
+
+.button-prev::after {
+    content: "\f060";
+    font-family: FontAwesome;
+}
+
+.button-next,
+.button-prev {
+    background: #506a85;
+    padding: 4px 12px;
+    border-radius: 5px;
+    color: #ccc;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.button-next:hover,
+.button-prev:hover,
+.button-next:active,
+.button-prev:active {
+    background: #374a5e;
+    color: #f1f1f1;
+}
+
+
+@media (max-width: 400px) {
+    .input-border {
+        width: 300px;
+        margin: 2px auto;
+    }
+    input[type="text"] {
+        width: 200px;
+    }
+    .video-item {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+    .input-border {
+        width: 305px;
+    }
+    input[type="text"] {
+        width: 200px;
+    }
+
+}
+
+
+
